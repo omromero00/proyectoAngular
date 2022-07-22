@@ -11,6 +11,7 @@ export class AppComponent {
   email; // : string ;
   webpage : string;
   hobbies : string[];
+  showhobbies : boolean;
 
   constructor(){
 
@@ -19,10 +20,11 @@ export class AppComponent {
       this.email = "oromero@unsa.edu.pe";
       this.webpage = "http://www.unsa.edu.pe";
       this.hobbies = ["Futbol", "Programación", "Netflix"];
+      this.showhobbies = true;
   }
 
-  showhobbies(){
+  toogleHobbies(){
 
-    return true;
+    this.showhobbies = !this.showhobbies;
   }
 }
