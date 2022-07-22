@@ -20,10 +20,10 @@ export class AppComponent {
       this.email = "oromero@unsa.edu.pe";
       this.webpage = "http://www.unsa.edu.pe";
       this.hobbies = ["Futbol", "Programación", "Netflix"];
-      this.showhobbies = true;
+      this.showhobbies = false;
   }
 
-  toogleHobbies(){
+  toggleHobbies(){
 
     this.showhobbies = !this.showhobbies;
   }
