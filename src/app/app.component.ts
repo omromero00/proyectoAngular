@@ -27,4 +27,13 @@ export class AppComponent {
 
     this.showhobbies = !this.showhobbies;
   }
+
+  newHobby(hobby : any){
+
+    this.hobbies.push(hobby.value);
+    hobby.value = "";
+    return false;
+    
+  }
+   
 }

@@ -494,12 +494,15 @@
   <div *ngIf="showhobbies" class="component2">
     <h3>hobbies:</h3>
     <ul>
-      <li *ngFor= "let hobby of hobbies">{{ hobbies }}</li>
+      <li *ngFor= "let hobby of hobbies">{{ hobby }}</li>
     </ul>
   </div>
   
   <a href="{{ webpage }}" target="_blank">Visita mi sitio web</a>
 </div>
+<form (submit)="newHobby(hobby)">
+  <input #hobby type="text" placeholder="hobby">;
+</form>
 <div class="black">
   <h1> {{ title }} </h1>
 </div>
